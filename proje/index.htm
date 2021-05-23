@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kutybook</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<style>
+		body {
+			background-color: lightblue;			
+		}
+		.giris {
+			width: 320px;
+			height: 100px;
+			left: 40%;
+			top: 20%;
+			position: absolute;
+			
+			
+		}
+		.container-fluid {
+			background-color: #3b5998;
+			color: white;
+		}
+		</style>
+		<div class="container-fluid">
+			<h1> KUTYBOOK</h1>
+		</div>
+		<br><br><br>
+		<form action="giris.php" method="post">
+		<div class="giris">
+		<label for="adsoyad"> Kullanıcı Adı:</label><br><input type="email" name="kullaniciadi" id="kullaniciadi"><br>
+		<label for="parola"> Parola:</label><br>  <input type="password" name="parola" id="parola"><br>		
+		<input type ="submit" value="Gönder">
+		</div>
+		</form>
+	</body>
+
+	
+
+
+</html>

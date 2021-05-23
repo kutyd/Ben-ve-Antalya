@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<style>
+		body {
+			background-color: lightblue;			
+		}
+		.giris {
+			width: 320px;
+			height: 100px;
+			left: 40%;
+			top: 20%;
+			position: absolute;
+			
+			
+		}
+		.container-fluid {
+			background-color: #3b5998;
+			color: white;
+		}
+		.nav{		
+		background-color: #3b5998;
+		padding-top: 10px;
+		width: 150px;
+		}
+		a{
+		color: white;padding-bottom:15px;
+		
+		}
+		</style>
+		<div class="container-fluid">
+			<h1> KUTYBOOK</h1>
+		</div>
+		<div class="nav">		
+			
+			<a href="hakkımızda.htm">Hakkımızda</a> <br>
+			<a href="">İlgi alanlarım</a> <br>
+			<a href="cv.htm">CV</a> <br>
+			<a href="şehrim.htm">Şehrim</a> <br>
+			<a href="#">Takımımız</a> <br>
+			<a href="iletişim.htm">İletişim</a>
+		</div>
+		<br><br><br>
+		<form action="bilgilerigoster.php" method="post">
+		<div class="giris">
+		<label for="adsoyad"> Ad Soyad:</label><br><input type="text" name="adsoyad" id="adsoyad"><br>
+		<label for="parola"> Parola:</label><br>  <input type="password" name="parola" id="parola"><br>	
+		<label for="email"> Mail Adresiniz:</label><br>  <input type="email" name="parola" id="mail"><br>
+		<h2>Hobileriniz</h2><br>
+			Basketbol <input type="checkbox" name"basketbol" value="basketbol"><br>
+			Kitap okumak <input type="checkbox" name"kitap" value="kitap"><br>
+			Bilgisayar oyunları <input type="checkbox" name"bilgisayar" value="blg"><br>
+		<h2>Hangi Takımlısın<h2><br>
+			Fenerbahçe<input type="radio" name="takim" value="fb"><br>
+			Beşiktaş<input type="radio" name="takim" value="bjk"><br>
+			Galatasaray<input type="radio" name="takim" value="gs"><br>
+			Antalyaspor<input type="radio" name="takim" value="ant"><br>
+		
+		<h2>Yaşadığınız Şehir<h2><br>
+			<select name="sehir">
+			<option value="İstanbul">İstanbul</option>
+			<option value="Ankara">Ankara</option>
+			<option value="İzmir">İzmir</option>
+			<option value="Antalya">Antalya</option>
+			<select>
+		<h2>Açıklama</h2>
+		<textarea name="aciklama" cols="50"></textarea>
+		<input type ="submit" value="Gönder">
+		</div>
+		</form>
+	</body>
+</body>
+</html>
